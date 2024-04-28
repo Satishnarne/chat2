@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallas Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .car {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .car-item {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .car-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .car-info {
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dallas Cars</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="car">
+            <div class="car-item">
+                <img class="car-img" src="car1.jpg" alt="Car 1">
+                <div class="car-info">
+                    <h2>Car Model 1</h2>
+                    <p>Type: Sedan</p>
+                    <p>Color: Red</p>
+                </div>
+            </div>
+            <div class="car-item">
+                <img class="car-img" src="car2.jpg" alt="Car 2">
+                <div class="car-info">
+                    <h2>Car Model 2</h2>
+                    <p>Type: SUV</p>
+                    <p>Color: Blue</p>
+                </div>
+            </div>
+            <div class="car-item">
+                <img class="car-img" src="car3.jpg" alt="Car 3">
+                <div class="car-info">
+                    <h2>Car Model 3</h2>
+                    <p>Type: Coupe</p>
+                    <p>Color: Black</p>
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <h2>Contact Us</h2>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+            <label for="contactnumber">Contact Number:</label>
+            <input type="tel" id="contactnumber" name="contactnumber" placeholder="Contact Number" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2024 Dallas Cars. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
